@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+/* HEADER */
+
+#header {
+  background: white;
+  border-bottom: 1px solid gray;
+  padding: 0.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header-left {
+  display: flex;
+  align-items: center;
+}
+
+#header-right ul {
+  display: flex;
+  align-items: center;
+}
+
+#header-right ul li {
+  list-style-type: none;
+  margin: 0.9rem;
+}
+
+#header-right ul li a {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 0.9rem;
+}
+
+#header-right ul li a:visited {
+  color: black;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 1.4rem;
+  padding: 0px 1.4rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+
+/* SECCION DE INTRODUCCION */
+
+#introduction {
+  padding-top: 5.5rem;
+  margin: 5rem 22rem;
+}
+
+#introduction-text h1 {
+  color: rgb(32, 27, 36);
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+#introduction-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+#introduction-buttons button:nth-child(2) {
+  color: rgb(107, 83, 240);
+  border: 2px solid rgb(107, 83, 240);
+}
+
+/* SECCION DE IMPACTO */
+
+#impacto {
+  background-color: rgb(32, 27, 36);
+  color: white;
+}
+
+#impacto-info {
+  display: flex;
+  padding: 8rem 11rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+#impacto-left {
+  width: 45%;
+}
+
+#impacto-left h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#impacto-left p {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+
+#impacto-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 2.3rem;
+}
+
+.impacto-right-span {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.impacto-right-div {
+  color: rgb(140, 147, 156);
+  font-weight: 400;
+}
+
+#background-img {
+  background: url("https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg");
+  height: calc(-50px + 100vh);
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* MAIN */
+
+#main-margin {
+  margin: 4rem 3rem;
+}
+
+/* SECCION PROGRAMAS Y CAPACITACIONES */
+
+#programas-title,
+#capacitaciones-title {
+  margin-bottom: 2.5rem;
+}
+
+#programas-title h2,
+#capacitaciones-title h2,
+#equipo-title h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: rgb(32, 27, 36);
+}
+
+#programas-container,
+#capacitaciones-container {
+  margin-bottom: 7rem;
+}
+
+.programas-container-info,
+.capacitaciones-container-info {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+#programas-left-img,
+#capacitaciones-left-img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 0 10% 10% 10%;
+}
+
+.programas-container-info-side,
+.capacitaciones-container-info-side {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#xantex-img {
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.programas-container-info-side p,
+.capacitaciones-container-info-side p {
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+  color: rgb(32, 27, 36);
+  line-height: 1.3rem;
+}
+
+.programas-container-info-side h4,
+.capacitaciones-container-info-side h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgb(32, 27, 36);
+}
+
+#programas-right-img,
+#capacitaciones-right-img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 10% 10% 0 10%;
+}
+
+.programas-button,
+.capacitaciones-button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 23px;
+  padding: 0px 23px;
+  height: 37px;
+  cursor: pointer;
+  max-width: 28%;
+}
+
+/* SECCION MIEMBROS DEL EQUIPO */
+
+#equipo {
+  background-color: rgb(244, 244, 245);
+  padding-bottom: 6rem;
+}
+
+#equipo-title h2 {
+  padding-top: 4rem;
+  margin: 2rem 2rem;
+}
+
+#equipo-container {
+  margin: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.equipo-member {
+  flex-basis: 220px;
+}
+
+.equipo-member img {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.equipo-member-info {
+  background-color: white;
+  text-align: center;
+}
+
+.equipo-member-info h5 {
+  padding-top: 1rem;
+  color: rgb(32, 27, 36);
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.equipo-member-info p {
+  padding-bottom: 1rem;
+  color: rgb(140, 147, 156);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+/* FOOTER */
+
+#footer {
+  background: rgb(32, 27, 36);
+}
+
+#footer-content {
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.footer-content-paragraph {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+  max-width: 25%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
